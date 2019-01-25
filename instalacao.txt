@@ -1,0 +1,42 @@
+RODAR O MONGO LOCAL
+cd C:\Program Files\MongoDB\Server\3.6\bin
+mongod --bind_ip 127.0.0.1 --dbpath C:\rocketseat\node\banco_mongo 
+
+FAZER CADASTRO
+localhost:3000/users
+
+{
+	
+	"name": "Diego Fernandes",
+	"email": "diego@rocketseat.com.br",
+	"password": "123456"
+}
+
+FAZER LOGIN
+localhost:3000/sessions
+{
+	
+	"email": "diego2@rocketseat.com.br",
+	"password": "123456"
+}
+
+ANUNCIOS
+Precisa passar o Authorization Bearer Token para consumir
+
+localhost:3000/ads
+
+{
+	"title": "Curso de Artesanato",
+	"description": "Curso para vender na praia",
+	"price": 20000
+}
+
+PURCHARES
+
+localhost:3000/purchases
+
+{
+
+	"ad": "5bfdbde823255f1aa0cc7e41",
+	"content": "teste"
+}
